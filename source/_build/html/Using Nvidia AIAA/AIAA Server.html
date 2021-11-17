@@ -47,12 +47,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using AIAA</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#startup">Startup</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connecting-to-server">Connecting to server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#loading-models">Loading Models</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#codemaster">CodeMaster</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#robot-turtles">Robot Turtles</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#primo-cubetto">Primo / Cubetto</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#loading-models">Loading Models</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="NVIDIA%20GPU%20Cloud%20%28NGC%29.html">NVIDIA GPU Cloud (NGC)</a></li>
@@ -97,22 +92,15 @@ docker-compose --env-file docker-compose.env -p aiaa_triton up --remove-orphans 
 <section id="connecting-to-server">
 <h2>Connecting to server<a class="headerlink" href="#connecting-to-server" title="Permalink to this headline"></a></h2>
 <p>Access Docker container files, replacing <em>mycontainer</em> with the container id
-or name viewable using <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span></code>:</p>
+or name (viewable using <code class="code docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span></code>):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker <span class="nb">exec</span> -t -I mycontainer /bin/bash
 </pre></div>
 </div>
 </section>
 <section id="loading-models">
 <h2>Loading Models<a class="headerlink" href="#loading-models" title="Permalink to this headline"></a></h2>
-<section id="codemaster">
-<h3>CodeMaster<a class="headerlink" href="#codemaster" title="Permalink to this headline"></a></h3>
-</section>
-<section id="robot-turtles">
-<h3>Robot Turtles<a class="headerlink" href="#robot-turtles" title="Permalink to this headline"></a></h3>
-</section>
-<section id="primo-cubetto">
-<h3>Primo / Cubetto<a class="headerlink" href="#primo-cubetto" title="Permalink to this headline"></a></h3>
-</section>
+<p><a class="reference external" href="https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html">https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html</a></p>
+<p>View accessible models: <a class="reference external" href="https://127.0.0.1:5000/v1/models">127.0.0.1:5000/v1/models</a></p>
 </section>
 </section>
 

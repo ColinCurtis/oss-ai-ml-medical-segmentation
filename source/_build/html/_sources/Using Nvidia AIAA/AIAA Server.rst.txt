@@ -17,7 +17,7 @@ Can also be integrated in segmentation clients (MITK Workbench, 3D Slicer, Fovia
 Connecting to server
 ====================
 Access Docker container files, replacing *mycontainer* with the container id 
-or name viewable using ``docker ps``:
+or name (viewable using :code:`docker ps`):
 
 .. code-block:: bash
    
@@ -26,12 +26,7 @@ or name viewable using ``docker ps``:
 
 Loading Models
 ==============
+https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html 
 
-CodeMaster
-----------
 
-Robot Turtles
--------------
-
-Primo / Cubetto
----------------
+View accessible models: `127.0.0.1:5000/v1/models <https://127.0.0.1:5000/v1/models>`_
