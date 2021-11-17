@@ -5,8 +5,8 @@
 
 Welcome to Open-Source AI/ML Segmentation's documentation!
 ==========================================================
-Instead of paying **tens of thousands** of dollars for access to *AI/ML medical 
-segmentation*, let’s do it for ``free``.
+Instead of paying tens of thousands of dollars for access to AI/ML medical 
+segmentation, let’s do it for free.
 
 test link: `test <google.com>`_
 
@@ -18,7 +18,7 @@ You can also try :doc:`NGC </Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)>` for :ref
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Test:
+   :caption: Test
 
    test/justlogic
    test/justcode
@@ -26,7 +26,14 @@ You can also try :doc:`NGC </Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)>` for :ref
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Nvidia AIAA:
+   :caption: Nvidia AIAA
 
    Using Nvidia AIAA/AIAA Server.rst
    Using Nvidia AIAA/NVIDIA GPU Cloud (NGC).rst
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Software Info
+
+   Software Info/Linux.rst
