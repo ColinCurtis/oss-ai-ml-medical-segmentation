@@ -86,13 +86,21 @@
 <h1>Using AIAA<a class="headerlink" href="#using-aiaa" title="Permalink to this headline"></a></h1>
 <section id="startup">
 <h2>Startup<a class="headerlink" href="#startup" title="Permalink to this headline"></a></h2>
-<p>Run:</p>
+<p>Run and start:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./start_aiaa.sh
+
+docker-compose --env-file docker-compose.env -p aiaa_triton up --remove-orphans -d
 </pre></div>
 </div>
+<p>Can also be integrated in segmentation clients (MITK Workbench, 3D Slicer, Fovia (PACS backend), OHIF)</p>
 </section>
 <section id="connecting-to-server">
 <h2>Connecting to server<a class="headerlink" href="#connecting-to-server" title="Permalink to this headline"></a></h2>
+<p>Access Docker container files, replacing <em>mycontainer</em> with the container id
+or name viewable using <code class="docutils literal notranslate"><span class="pre">docker</span> <span class="pre">ps</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker <span class="nb">exec</span> -t -I mycontainer /bin/bash
+</pre></div>
+</div>
 </section>
 <section id="loading-models">
 <h2>Loading Models<a class="headerlink" href="#loading-models" title="Permalink to this headline"></a></h2>
