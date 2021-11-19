@@ -13,6 +13,9 @@ The NGC Catalog is a curated set of GPU-optimized software for AI, HPC and Visua
 Pre-trained models
 ------------------
 
+| https://ngc.nvidia.com/catalog 
+| https://ngc.nvidia.com/catalog/models?orderBy=scoreDESC&pageNumber=0&query=clara_pt&quickFilter=&filters= 
+
 Models that worked:
 ~~~~~~~~~~~~~~~~~~~
 
@@ -29,5 +32,8 @@ Models that worked:
 * clara_pt_spleen_ct_annotation
 * clara_pt_spleen_ct_segmentation
 
-Steps to run
-------------
+
+Datasets
+--------
+
+https://www.synapse.org/#!Synapse:syn3193805/wiki/217789 

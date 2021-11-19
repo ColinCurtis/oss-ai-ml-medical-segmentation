@@ -5,6 +5,7 @@
 | Download: https://download.slicer.org/ 
 
 AIAA requires a preview or stable version of 3D Slicer 4.11.x or newer. 
+
 .. (is this true?)
 
 Uninstall 3D Slicer on Linux by deleting its directory.

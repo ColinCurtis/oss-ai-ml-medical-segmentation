@@ -28,7 +28,9 @@ Each release of the CUDA Toolkit requires a minimum version of the CUDA driver. 
 | CUDA11 needs NVIDIA driver >= 450.36.06. 
 | CUDA 11.4 Update 2 needs NVIDIA driver >=470.57.02 
 
-The NVIDIA driver can be installed as part of the CUDA Toolkit installation. 
+The NVIDIA driver can be installed as part of the CUDA Toolkit installation, but you should install it separately.
+
+The CUDA driver on Linux systems is :code:`libcuda.so`.
 
 The minimum recommended GCC compiler (GNU Compiler Collection) is at least GCC 6. 
 

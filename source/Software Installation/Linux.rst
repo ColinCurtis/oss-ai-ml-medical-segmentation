@@ -49,3 +49,18 @@ You can either replace your existing OS following `the steps here <https://ubunt
 .. code-block:: bash
 
    sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
+
+Useful Ubuntu tips
+------------------
+
+Terminal tutorial: https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/ 
+
+Reboot Linux to BIOS::
+   
+   sudo systemctl reboot --firmware-setup 
+
+Keep laptop on when closed (two methods):
+  
+* Preferred: Install and use :code:`Tweaks`
+
+* Alternative: Run :code:`sudo gedit /etc/systemd/logind.conf` and change :code:`#HandleLidSwitch=suspend` to :code:`#HandleLidSwitch=ignore`

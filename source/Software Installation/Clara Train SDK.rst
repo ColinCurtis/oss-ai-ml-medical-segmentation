@@ -20,9 +20,14 @@ Clara Deploy
 | https://ngc.nvidia.com/catalog/resources/nvidia:clara:clara_bootstrap 
 | An extensible reference development framework that facilitates turning AI models into AI-powered clinical workflows with built-in support for DICOM communication and the ability to interface with existing hospital infrastructures.
 
+Clara Studio: https://www.youtube.com/watch?v=ZOfruuXMjkw
+Nvidia and Fovia: https://www.youtube.com/watch?v=bllg2lwSfO4
+
 Clara Train SDK Installation
 ============================
 Official installation guide: https://docs.nvidia.com/clara/clara-train-sdk/pt/installation.html
+
+* Their guide has separate instructions for DGX systems, which are supercomputers for problem-solving of machine learning and AI. If you are following my guide, you likely don't have a DGX system.
 
 Download the docker container:
 
