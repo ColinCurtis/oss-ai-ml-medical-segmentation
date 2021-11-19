@@ -12,8 +12,6 @@ Install the software in order as presented in this guide so everything has acces
 
 .. Go here: :doc:`/Using Nvidia AIAA/AIAA Server` for the AIAA server
 
-.. You can also try :doc:`NGC </Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)>` for :ref:`pre-made models <workingNGCModels>`.
-
 
 .. toctree::
    :maxdepth: 2
