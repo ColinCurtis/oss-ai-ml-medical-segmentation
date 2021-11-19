@@ -3,11 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==============================================
-Open-Source AI/ML Segmentation's documentation
-==============================================
-Instead of paying tens of thousands of dollars for access to AI/ML medical 
-segmentation, let’s do it for free.
+==============================
+Open-Source AI/ML Segmentation
+==============================
+
+Access AI/ML medical segmentation for free.
 
 Install the software in order as presented in this guide so everything has access to their dependencies.
 
