@@ -1,4 +1,4 @@
-
+======================
 NVIDIA GPU Cloud (NGC)
 ======================
 
@@ -11,13 +11,13 @@ NVIDIA GPU Cloud (NGC)
 The NGC Catalog is a curated set of GPU-optimized software for AI, HPC and Visualization. It consists of containers, pre-trained models, Helm charts for Kubernetes deployments and industry specific AI toolkits with software development kits (SDKs). 
 
 Pre-trained models
-------------------
+==================
 
 | https://ngc.nvidia.com/catalog 
 | https://ngc.nvidia.com/catalog/models?orderBy=scoreDESC&pageNumber=0&query=clara_pt&quickFilter=&filters= 
 
 Models that worked:
-~~~~~~~~~~~~~~~~~~~
+===================
 
 * clara_pt_brain_mri_annotation_t1c
 * clara_pt_brain_mri_segmentation_t1c
@@ -34,6 +34,22 @@ Models that worked:
 
 
 Datasets
---------
+========
 
 https://www.synapse.org/#!Synapse:syn3193805/wiki/217789 
+
+
+Download Models
+===============
+
+Set :code:`AIAA_PORT` to the port of your AIAA server::
+
+   AIAA_PORT=5000 
+
+Set the MODEL variable to the name of the new model. For example, for the model :code:`clara_pt_covid19_ct_lung_annotation`::
+
+   MODEL='clara_pt_covid19_ct_lung_annotation' && VERSION=1
+
+Download::
+
+   curl -X PUT "http://127.0.0.1:$AIAA_PORT/admin/model/$MODEL" -H "accept: application/json" -H "Content-Type: application/json" -d '{"path":"nvidia/med/'"$MODEL"'","version":"'"$VERSION"'"}' 

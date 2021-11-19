@@ -5,7 +5,7 @@ Python Tools
 Python
 ======
 
-Homepage: https://www.python.org/ 
+Homepage: https://www.python.org/
 
 Python is usually automatically installed in Linux distributions.
 

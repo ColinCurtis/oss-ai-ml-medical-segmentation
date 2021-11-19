@@ -3,6 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+==============================================
 Open-Source AI/ML Segmentation's documentation
 ==============================================
 Instead of paying tens of thousands of dollars for access to AI/ML medical 
@@ -36,3 +37,8 @@ Install the software in order as presented in this guide so everything has acces
 
    Using Nvidia AIAA/AIAA Server
    Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)
+
+
+Academic articles
+=================
+Academic articles: `Segmentation <https://arxiv.org/pdf/1711.08580.pdf>`_ (only image), `Annotation <https://arxiv.org/pdf/1711.09081.pdf>`_ (image and user input), `Deep grow <https://arxiv.org/pdf/1903.08205.pdf>`_ (foreground and background clicks).

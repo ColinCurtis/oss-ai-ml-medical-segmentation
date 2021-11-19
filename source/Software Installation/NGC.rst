@@ -2,7 +2,8 @@
 :abbr:`NGC (NVIDIA GPU Cloud)` :abbr:`CLI (command-line interface)`
 ===================================================================
 
-Official installation guide: https://ngc.nvidia.com/catalog/collections/nvidia:gettingstarted
+| Official NGC guide: https://ngc.nvidia.com/catalog/collections/nvidia:gettingstarted
+| NGC Catalog: https://www.nvidia.com/en-us/gpu-cloud/
 
 Login to your NVIDIA account
 ============================

@@ -51,7 +51,7 @@ You can either replace your existing OS following `the steps here <https://ubunt
    sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
 
 Useful Ubuntu tips
-------------------
+==================
 
 Terminal tutorial: https://www.howtogeek.com/140679/beginner-geek-how-to-start-using-the-linux-terminal/ 
 
@@ -59,8 +59,41 @@ Reboot Linux to BIOS::
    
    sudo systemctl reboot --firmware-setup 
 
-Keep laptop on when closed (two methods):
-  
-* Preferred: Install and use :code:`Tweaks`
+Keep laptop on when closed (two methods)
+----------------------------------------
 
-* Alternative: Run :code:`sudo gedit /etc/systemd/logind.conf` and change :code:`#HandleLidSwitch=suspend` to :code:`#HandleLidSwitch=ignore`
+Preferred: Install and use :code:`Tweaks`
+
+Alternative: Run :code:`sudo gedit /etc/systemd/logind.conf` and change :code:`#HandleLidSwitch=suspend` to :code:`#HandleLidSwitch=ignore`
+
+Use BitLocker Flash Drives on Linux 
+-----------------------------------
+
+Guide: https://www.ceos3c.com/open-source/open-bitlocker-drive-linux/ 
+
+First-time steps 
+~~~~~~~~~~~~~~~~
+
+Install Dislocker::
+
+   sudo apt-get install dislocker 
+
+Make a folder :file:`/media/bitlocker` and :file:`/media/mound` 
+
+Steps every time
+~~~~~~~~~~~~~~~~
+
+Find your drive::
+
+   sudo fdisk -l
+
+.. note::
+   Take note of the device. :file:`/dev/sdb1` would be :file:`sdb1`
+
+Use :code:`Dislocker` to unlock the device, replacing :code:`sdb1` with your device and :code:`YourPassword` with the password::
+
+   sudo dislocker -r -V /dev/sdb1 -uYourPassword -- /media/bitlocker 
+
+Mount the drive::
+
+   sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount 

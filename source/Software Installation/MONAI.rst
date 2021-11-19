@@ -33,9 +33,9 @@ Install all optional dependencies::
 MONAI Label
 ===========
 
-| Homepage: https://docs.monai.io/projects/label/en/latest/ 
-| Source code: https://github.com/Project-MONAI/MONAILabel 
-| More info: https://medium.com/pytorch/monai-v0-6-and-monai-label-v0-1-e738556b0a10 
+| Homepage: https://docs.monai.io/projects/label/en/latest/
+| Source code: https://github.com/Project-MONAI/MONAILabel
+| More info: https://medium.com/pytorch/monai-v0-6-and-monai-label-v0-1-e738556b0a10
 
 “For Researchers, MONAI Label gives you an easy way to define their pipeline to facilitate the image annotation process.For Clinicians, MONAI Label gives you access to a continuously learning AI that will better understand what the end-user is trying to annotate. 
 MONAI Label comprises the following key components: MONAI Label Server, MONAI Label Sample Apps, MONAI Label Sample Datasets, and a 3DSlicer Viewer extension.” 
