@@ -96,4 +96,4 @@ Use :code:`Dislocker` to unlock the device, replacing :code:`sdb1` with your dev
 
 Mount the drive::
 
-   sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount 
+   sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount
