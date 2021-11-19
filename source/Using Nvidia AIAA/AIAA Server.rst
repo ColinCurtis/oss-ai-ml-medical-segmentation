@@ -26,7 +26,7 @@ or name (viewable using :code:`docker ps`):
 
 Loading Models
 ==============
-https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html 
+https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html
 
 
 View accessible models: `127.0.0.1:5000/v1/models <https://127.0.0.1:5000/v1/models>`_

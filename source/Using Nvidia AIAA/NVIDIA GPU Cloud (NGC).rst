@@ -44,7 +44,7 @@ Download Models
 
 Set :code:`AIAA_PORT` to the port of your AIAA server::
 
-   AIAA_PORT=5000 
+   AIAA_PORT=5000
 
 Set the MODEL variable to the name of the new model. For example, for the model :code:`clara_pt_covid19_ct_lung_annotation`::
 
