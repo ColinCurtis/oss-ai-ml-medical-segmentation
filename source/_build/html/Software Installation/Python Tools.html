@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hardware Requirements &mdash; Open-Source AI/ML Segmentation  documentation</title>
+  <title>Python &mdash; Open-Source AI/ML Segmentation  documentation</title>
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -18,8 +18,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Linux" href="Linux.html" />
-    <link rel="prev" title="Welcome to Open-Source AI/ML Segmentation’s documentation!" href="../index.html" /> 
+    <link rel="next" title="Using AIAA" href="../Using%20Nvidia%20AIAA/AIAA%20Server.html" />
+    <link rel="prev" title="Nvidia CUDA" href="Nvidia%20CUDA.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -39,12 +39,13 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Software installation</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Hardware Requirements</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#gpu-compatibility">GPU Compatibility</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Hardware%20Requirements.html">Hardware Requirements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Linux.html">Linux</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Nvidia%20CUDA.html">Nvidia CUDA</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#numpy">NumPy</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Nvidia AIAA</span></p>
 <ul>
@@ -66,9 +67,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-      <li>Hardware Requirements</li>
+      <li>Python</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/Software Installation/Hardware Requirements.rst.txt" rel="nofollow"> View page source</a>
+            <a href="../_sources/Software Installation/Python Tools.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -76,20 +77,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="hardware-requirements">
-<h1>Hardware Requirements<a class="headerlink" href="#hardware-requirements" title="Permalink to this headline"></a></h1>
-<section id="gpu-compatibility">
-<h2>GPU Compatibility<a class="headerlink" href="#gpu-compatibility" title="Permalink to this headline"></a></h2>
-<p>Clara 4.0 is based on the <a class="reference external" href="https://docs.nvidia.com/deeplearning/frameworks/pytorch-release-notes/rel_21-02.html#rel_21-02">NVIDIA container for PyTorch release 21.02</a> detailed <a class="reference external" href="https://ngc.nvidia.com/catalog/containers/nvidia:pytorch">here</a>, which is based on NVIDIA CUDA 11.2.0, which requires NVIDIA Driver release 460.27.04 or later.</p>
-<p>NVIDIA GPUs are ranked by their compute capability. Hardware generations are currently Kepler (3.x), Maxwell (5.x), Pascal (6.x), Volta (7.x), Turing (7.5), and NVIDIA Ampere GPU Architecture (8.0).</p>
-<p>Release 21.02 supports CUDA compute capability 6.0 and higher. Any GPU less than 6.0 will not be compatible.</p>
-<p><a class="reference external" href="https://developer.nvidia.com/cuda-gpus">View your GPU’s compute capability</a>.</p>
-<p>Example GPUs:</p>
-<ul class="simple">
-<li><p>GeForce GTX 850M – 5.0</p></li>
-<li><p>GeForce GTX 1070 – 6.1</p></li>
-<li><p>GeForce GTX 1080 – 6.1</p></li>
-</ul>
+  <section id="python">
+<h1>Python<a class="headerlink" href="#python" title="Permalink to this headline"></a></h1>
+<p>Homepage: <a class="reference external" href="https://www.python.org/">https://www.python.org/</a></p>
+<p>Python is usually automatically installed in Linux distributions. To run Python, type <code class="code docutils literal notranslate"><span class="pre">python3</span></code>. If you want to use <code class="code docutils literal notranslate"><span class="pre">python3</span></code> when you type <code class="code docutils literal notranslate"><span class="pre">python</span></code>, just add <code class="code docutils literal notranslate"><span class="pre">alias</span> <span class="pre">python='python3'</span></code> to your <code class="file docutils literal notranslate"><span class="pre">~/.bash_aliases</span></code> file.</p>
+<section id="numpy">
+<h2>NumPy<a class="headerlink" href="#numpy" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://numpy.org/">https://numpy.org/</a></p>
+<p>Requires Python and pip.</p>
 </section>
 </section>
 
@@ -97,8 +92,8 @@
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="../index.html" class="btn btn-neutral float-left" title="Welcome to Open-Source AI/ML Segmentation’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="Linux.html" class="btn btn-neutral float-right" title="Linux" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="Nvidia%20CUDA.html" class="btn btn-neutral float-left" title="Nvidia CUDA" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../Using%20Nvidia%20AIAA/AIAA%20Server.html" class="btn btn-neutral float-right" title="Using AIAA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

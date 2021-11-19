@@ -17,7 +17,9 @@
         <script src="../_static/doctools.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" /> 
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Nvidia CUDA" href="Nvidia%20CUDA.html" />
+    <link rel="prev" title="Hardware Requirements" href="Hardware%20Requirements.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -35,10 +37,17 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Test</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="../test/justlogic.html">Just Logic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../test/justcode.html">JustCode</a></li>
+              <p class="caption" role="heading"><span class="caption-text">Software installation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Hardware%20Requirements.html">Hardware Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Linux</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ubuntu">Ubuntu</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-ubuntu-20-04-lts">Install Ubuntu 20.04 <abbr title="Long Term Support">LTS</abbr></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Nvidia%20CUDA.html">Nvidia CUDA</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Nvidia AIAA</span></p>
 <ul>
@@ -87,13 +96,46 @@ during installation steps.</p>
 <p>Some software say they require Ubuntu and specifically a long-term support
 (LTS) version like 20.04. For maximum compatibility, I recommend this
 version.</p>
+<section id="install-ubuntu-20-04-lts">
+<h3>Install Ubuntu 20.04 <abbr title="Long Term Support">LTS</abbr><a class="headerlink" href="#install-ubuntu-20-04-lts" title="Permalink to this headline"></a></h3>
+<p>You can either replace your existing OS following <a class="reference external" href="https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview">the steps here</a>, or you can dual boot with Windows. The following steps are based on <a class="reference external" href="https://medium.com/linuxforeveryone/how-to-install-ubuntu-20-04-and-dual-boot-alongside-windows-10-323a85271a73">this guide</a>, and you may want to reference it for more details.</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://ubuntu.com/download#download">Download Ubuntu 20.04 LTS</a></p></li>
+<li><p>Use <a class="reference external" href="https://rufus.ie/en/">Rufus</a> to flash the Linux ISO onto a flash drive</p></li>
+<li><p>Shrink a partition to get hard drive space for Linux</p></li>
+<li><p>Restart the computer into the boot menu and boot from the flash drive</p>
+<ul class="simple">
+<li><p>If pressing keys at startup doesn’t work, go into Recovery settings in Windows and choose to restart into firmware settings</p></li>
+<li><p>If possible, disable the fast-boot option from your BIOS</p></li>
+</ul>
+</li>
+<li><p>Pick Normal installation, Download updates, and Install third-party software</p></li>
+<li><p>Choose installation type “Something else”</p></li>
+<li><p>Select the free space and click the + button to create Linux partitions</p>
+<ul class="simple">
+<li><p>If you want SWAP memory, make that first and choose “Logical” and “swap area”</p></li>
+<li><p>Create the root partition using the rest of the free space. Choose “Primary” and use as “Ext4 journaling file system” and make the Mount point “/”</p></li>
+<li><p>If you have a separate hard drive for personal files, create a Logical partition using free space on that hard drive</p></li>
+</ul>
+</li>
+<li><p>Leave the boot loader installation on /dev/sda or equivalent top-level location that stores Windows Boot Manager then click “Install Now”</p></li>
+<li><p>After installation if it always boots straight into Windows, you should make the Ubuntu boot loader top priority in the BIOS/UEFI settings</p></li>
+<li><p>Configure the settings to your liking and update the system and packages using this code in the terminal:</p></li>
+</ol>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo -- sh -c <span class="s1">&#39;apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y&#39;</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="Hardware%20Requirements.html" class="btn btn-neutral float-left" title="Hardware Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="Nvidia%20CUDA.html" class="btn btn-neutral float-right" title="Nvidia CUDA" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

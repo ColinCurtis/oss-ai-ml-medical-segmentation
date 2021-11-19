@@ -21,7 +21,7 @@ or name (viewable using :code:`docker ps`):
 
 .. code-block:: bash
    
-   docker exec -t -I mycontainer /bin/bash 
+   docker exec -t -I mycontainer /bin/bash
 
 
 Loading Models

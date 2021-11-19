@@ -1,0 +1,13 @@
+======
+Python
+======
+
+Homepage: https://www.python.org/ 
+
+Python is usually automatically installed in Linux distributions. To run Python, type :code:`python3`. If you want to use :code:`python3` when you type :code:`python`, just add :code:`alias python='python3'` to your :file:`~/.bash_aliases` file.
+
+NumPy
+=====
+https://numpy.org/ 
+
+Requires Python and pip. 

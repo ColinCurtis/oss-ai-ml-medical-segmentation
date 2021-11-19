@@ -11,7 +11,7 @@ NVIDIA GPUs are ranked by their compute capability. Hardware generations are cur
 
 Release 21.02 supports CUDA compute capability 6.0 and higher. Any GPU less than 6.0 will not be compatible. 
 
-View your GPU’s compute capability `here <https://developer.nvidia.com/cuda-gpus>`_.
+`View your GPU’s compute capability <https://developer.nvidia.com/cuda-gpus>`_.
 
 Example GPUs: 
 
