@@ -2,6 +2,14 @@
 NVIDIA GPU Cloud (NGC)
 ======================
 
+| https://ngc.nvidia.com/catalog/collections/nvidia:gettingstarted 
+| https://docs.nvidia.com/ngc/ngc-catalog-user-guide/index.html 
+| https://docs.nvidia.com/ngc/index.html 
+| https://ngc.nvidia.com/catalog 
+| https://www.nvidia.com/en-us/gpu-cloud/ 
+
+The NGC Catalog is a curated set of GPU-optimized software for AI, HPC and Visualization. It consists of containers, pre-trained models, Helm charts for Kubernetes deployments and industry specific AI toolkits with software development kits (SDKs). 
+
 Pre-trained models
 ------------------
 
