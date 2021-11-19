@@ -7,7 +7,6 @@ Pre-trained models
 
 Models that worked:
 ~~~~~~~~~~~~~~~~~~~
-.. _workingNGCModels:
 
 * clara_pt_brain_mri_annotation_t1c
 * clara_pt_brain_mri_segmentation_t1c

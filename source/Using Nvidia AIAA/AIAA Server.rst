@@ -30,5 +30,3 @@ https://docs.nvidia.com/clara/clara-train-sdk/aiaa/loading_models.html
 
 
 View accessible models: `127.0.0.1:5000/v1/models <https://127.0.0.1:5000/v1/models>`_
-
-Try :doc:`NGC </Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)>` for :ref:`pre-made models <workingNGCModels>`.
