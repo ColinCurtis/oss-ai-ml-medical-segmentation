@@ -24,6 +24,7 @@ Install the software in order as presented in this guide so everything has acces
    Software Installation/Docker
    Software Installation/Clara Train SDK
    Software Installation/AIAA
+   Software Installation/NGC
    Software Installation/MONAI
    Software Installation/3D Slicer
    Software Installation/MITK
