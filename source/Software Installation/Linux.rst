@@ -78,7 +78,7 @@ Install Dislocker::
 
    sudo apt-get install dislocker 
 
-Make a folder :file:`/media/bitlocker` and :file:`/media/mound` 
+Make a folder :file:`/media/bitlocker` and :file:`/media/mount`
 
 Steps every time
 ~~~~~~~~~~~~~~~~
