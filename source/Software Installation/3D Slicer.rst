@@ -17,9 +17,11 @@ Official installation guide: https://slicer.readthedocs.io/en/latest/user_guide/
 
 Download the Linux Preview Release: https://download.slicer.org/ 
 
-Extract the :file:`tar.gz` file and move the folder to desired destination. Then run::
+Extract the :file:`tar.gz` file and move the folder to desired destination. 
+
+The first time you install 3D Slicer you should run::
 
    sudo apt-get install libpulse-dev libnss3 libglu1-mesa 
    sudo apt-get install --reinstall libxcb-xinerama0 
 
-Run the Slicer executable, open the extensions manager, and install NvidiaAIAssistedAnnotation and MONAILabel.
+Run the Slicer executable, open the extensions manager (View -> Extension Manager), and install `NvidiaAIAssistedAnnotation <https://github.com/NVIDIA/ai-assisted-annotation-client/blob/master/slicer-plugin/README.md>`_ and `MONAILabel <https://github.com/Project-MONAI/MONAILabel/tree/main/plugins/slicer>`_.

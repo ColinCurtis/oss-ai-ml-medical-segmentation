@@ -37,8 +37,23 @@ Install the software in order as presented in this guide so everything has acces
 
    Using Nvidia AIAA/AIAA Server
    Using Nvidia AIAA/NVIDIA GPU Cloud (NGC)
+   Using Nvidia AIAA/3D Slicer Extension
 
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: MONAI
+
+   MONAI/MONAI Label
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Datasets
+
+   Datasets/Available Datasets
+   Datasets/Creating Datasets
 
 Academic articles
 =================
-Academic articles: `Segmentation <https://arxiv.org/pdf/1711.08580.pdf>`_ (only image), `Annotation <https://arxiv.org/pdf/1711.09081.pdf>`_ (image and user input), `Deep grow <https://arxiv.org/pdf/1903.08205.pdf>`_ (foreground and background clicks).
+Academic articles: `Segmentation <https://arxiv.org/pdf/1711.08580.pdf>`_ (non-interactive), `Annotation <https://arxiv.org/pdf/1711.09081.pdf>`_ (image and user input), `Deep grow <https://arxiv.org/pdf/1903.08205.pdf>`_ (foreground and background clicks).
