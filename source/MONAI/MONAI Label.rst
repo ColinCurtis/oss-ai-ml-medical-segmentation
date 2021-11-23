@@ -2,6 +2,9 @@
 MONAI Label
 ===========
 
+| GitHub: https://github.com/Project-MONAI/MONAILabel/tree/main/plugins/slicer
+| Demo: https://youtu.be/o8HipCgSZIw
+
 These steps follow this guide: https://docs.monai.io/projects/label/en/latest/installation.html#downloading-sample-apps-or-datasets
 
 Download Sample Apps or Datasets
@@ -32,35 +35,10 @@ Go to the location with the :file:`apps` and :file:`datasets` folders and start 
 
 The server will be served by default at http://127.0.0.1:8000/. It uses `Uvicorn <https://www.uvicorn.org/>`_, which is an ASGI server implementation using `uvloop <https://github.com/MagicStack/uvloop>`_ and `httptools <https://github.com/MagicStack/httptools>`_.
 
+.. _MONAI-Label-plugin-usage:
+
 3D Slicer plugin
 ================
 
-| GitHub: https://github.com/Project-MONAI/MONAILabel/tree/main/plugins/slicer
-| Demo: https://youtu.be/o8HipCgSZIw
+:ref:`Install instructions <MONAI-Label-plugin-install>`
 
-The pluging should be installed in 3D Slicer from -> Extension Manager -> Active Learning -> MONAI Label
-
-Once installed, the module will be found in the Modules dropdown under Active Learning -> MONAILabel. Input the server address (http://127.0.0.1:8000/) then pick the app name and volume.
-
-Developer model
----------------
-
-If you get an error that you need to upgrade, you need to install it in developer mode.
-
-Uninstall the non-working MONAI Label extension from 3D Slicer and restart the application.
-
-Go to the location you want to download the MONAI Label source code and run::
-
-    git clone git@github.com:Project-MONAI/MONAILabel.git
-
-If you get a message you were denied permission, you need to make a SSH key.
-
-Go to your :file:`~/.ssh` folder and generate a key::
-
-    cd ~/.ssh && ssh-keygen
-
-Keep pressing :kbd:`Enter` until you get the files :file:`id_rsa` and :file:`id_rsa.pub`. On GitHub, go to Account settings > SSH and GPG keys
-
-Run :code:`ssh -T git@github.com` for authentication, then return to the location do download the MONAI Label source code and run :code:`git clone git@github.com:Project-MONAI/MONAILabel.git`.
-
-In 3D Slicer go to Edit -> Application Settings -> Modules -> Additional Module Paths and add a new module path: :file:`<FULL_PATH>/plugins/slicer/MONAILabel`. You can drag and drop this folder into 3D Slicer instead of typing it out. Restart 3D Slicer.
