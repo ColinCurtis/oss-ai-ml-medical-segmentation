@@ -15,7 +15,9 @@ New milestone release changes: https://docs.monai.io/en/latest/whatsnew.html
 
 Transfer learning from Clara Train models: https://github.com/Project-MONAI/tutorials/blob/master/modules/transfer_mmar.ipynb
 
-Requires PyTorch 
+Requires PyTorch
+
+Would be considered sofware of unknown provenance
 
 MONAI Installation
 ==================
@@ -46,6 +48,8 @@ MONAI Label
 | Source code: https://github.com/Project-MONAI/MONAILabel
 | More info: https://medium.com/pytorch/monai-v0-6-and-monai-label-v0-1-e738556b0a10
 | Tutorials: https://github.com/Project-MONAI/tutorials
+| Discussions: https://github.com/Project-MONAI/MONAI/discussions
+
 
 “For Researchers, MONAI Label gives you an easy way to define their pipeline to facilitate the image annotation process.For Clinicians, MONAI Label gives you access to a continuously learning AI that will better understand what the end-user is trying to annotate. 
 MONAI Label comprises the following key components: MONAI Label Server, MONAI Label Sample Apps, MONAI Label Sample Datasets, and a 3DSlicer Viewer extension.” 
@@ -99,3 +103,17 @@ Run :code:`monailabel --help` to see if Monai Label installed correctly. If it s
    set -e
    PYEXE=python3
    ${PYEXE} -m monailabel.main $*
+
+Update MONAI
+============
+
+To update an install of MONAI to a new stable version, you need to first uninstall MONAI and MONAI Label::
+
+   pip uninstall monailabel
+   pip uninstall monai
+
+Then, install MONAI, optional dependencies, and MONAI Label::
+
+   pip install monai
+   pip install 'monai[all]'
+   pip install monailabel

@@ -45,6 +45,7 @@ Install the software in order as presented in this guide so everything has acces
    :caption: MONAI
 
    MONAI/MONAI Label
+   MONAI/Tutorials
 
 .. toctree::
    :maxdepth: 2
