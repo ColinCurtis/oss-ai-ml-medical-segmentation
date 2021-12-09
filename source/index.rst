@@ -46,6 +46,7 @@ Install the software in order as presented in this guide so everything has acces
 
    MONAI/MONAI Label
    MONAI/Tutorials
+   MONAI/3D Segmentation
 
 .. toctree::
    :maxdepth: 2
