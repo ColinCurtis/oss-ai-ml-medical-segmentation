@@ -29,6 +29,9 @@ You can either replace your existing OS following `the steps here <https://ubunt
 #. `Download Ubuntu 20.04 LTS <https://ubuntu.com/download#download>`_
 #. Use `Rufus <https://rufus.ie/en/>`_ to flash the Linux ISO onto a flash drive 
 #. Shrink a partition to get hard drive space for Linux 
+
+   * You should partition at least 300 gigabytes for Linux so you can download large datasets
+
 #. Restart the computer into the boot menu and boot from the flash drive 
 
    * If pressing keys at startup doesn’t work, go into Recovery settings in Windows and choose to restart into firmware settings 
@@ -97,3 +100,19 @@ Use :code:`Dislocker` to unlock the device, replacing :code:`sdb1` with your dev
 Mount the drive::
 
    sudo mount -r -o loop /media/bitlocker/dislocker-file /media/mount
+
+Move additional disk space to Linux partition
+---------------------------------------------
+
+You can move additional storage space from your Windows partition to Linux if you find you need to more space. Although you are unlikely to lose data if you do this correctly, you should still back up anything important before doing these steps. You will want change Windows partition sizes while running Windows and Linux partitions while running Linux.
+
+#. In Windows, go to Disk Management, right-click on the partition to shrink, and select Shrink Volume.
+#. If you don't have the Ubuntu flash drive anymore, create a new one then boot into it. 
+#. When running Ubuntu from the live flash drive, open GParted and select the relavent disk drive. This is a good guide for using GParted: https://www.howtogeek.com/114503/how-to-resize-your-ubuntu-partitions/
+#. In GParted, you can grow partitions into unallocated partitions they are next to.
+
+   * If the target Linux partition is not right next to unallocated space, you will need to move the space one partition at a time until you get to the target partition
+   * You can't change sizes of partitions with key logos on them, so in that case you can right-click and select Swapoff
+   * If you move the start sector of a partition the OS may fail to boot and you will need to reinstall Grub 2, but I did not have this problem after moving start sectors
+
+#. Restart the computer and verify both operating systems boot correctly
