@@ -45,8 +45,20 @@ Install the software in order as presented in this guide so everything has acces
    :caption: MONAI
 
    MONAI/MONAI Label
-   MONAI/Tutorials
-   MONAI/3D Segmentation
+   MONAI/DICOM
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: MONAI Tutorials
+
+   MONAI Tutorials/Official Tutorials
+   MONAI Tutorials/Transforms
+   MONAI Tutorials/3D Segmentation - Spleen
+   MONAI Tutorials/3D Segmentation - BRATS Brain Tumors
+   MONAI Tutorials/3D Segmentation - UNETR
+   MONAI Tutorials/UNETR Test
+   MONAI Tutorials/Test - UNETR on Spleen
 
 .. toctree::
    :maxdepth: 2

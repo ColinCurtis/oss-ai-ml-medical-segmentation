@@ -1,23 +1,9 @@
-=========
-Tutorials
-=========
 
-MONAI tutorials can be found `on the GitHub page <https://github.com/Project-MONAI/tutorials>`_.
-
-These tutorials require Jupiter Notebooks::
-
-    python -m pip install -U notebook
-
-Some tutorials require optional dependencies, which should have already been installed. In case you get import errors, run::
-
-    pip install -r https://raw.githubusercontent.com/Project-MONAI/MONAI/dev/requirements-dev.txt
-
-Run the notebooks from Colab
-
-Data
-
+=====================
+Tutorial - Transforms
+=====================
 MONAI Bootcamp 2021 Day 1: 1. Getting Started - MONAI Transforms
-================================================================
+
 | Tutorial: https://github.com/Project-MONAI/MONAIBootcamp2021/blob/main/day1/1.%20Getting%20Started%20with%20MONAI.ipynb
 | Video: https://youtu.be/Ih-4xzRJYO0
 

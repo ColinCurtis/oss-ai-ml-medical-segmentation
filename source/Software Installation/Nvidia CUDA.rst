@@ -53,7 +53,7 @@ NVIDIA Clara needs a compute capability of 6.0 or higher. Your GPU should be lis
 
 .. code-block:: bash
 
-   Run lspci | grep -I nvidia   
+   lspci | grep -I NVIDIA   
 
 Verify you have a supported version of Linux 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
