@@ -361,24 +361,6 @@ Create a JSON file named :file:`dataset_0.json` and paste in this text:
         val_ds, batch_size=1, shuffle=False, num_workers=4, pin_memory=True
     )
 
-Alternative for troubleshooting memory:
-
-.. code-block:: python
-
-    data_dir = "/syn3193805/Abdomen/RawData/"
-    split_JSON = "dataset_0.json"
-    datasets = root_dir + data_dir + split_JSON
-    datalist = load_decathlon_datalist(datasets, True, "training")
-    val_files = load_decathlon_datalist(datasets, True, "validation")
-    train_ds = monai.data.Dataset(data=datalist, transform=train_transforms)
-    train_loader = DataLoader(
-        train_ds, batch_size=1, shuffle=True, num_workers=8, pin_memory=False
-    )
-    val_ds = Dataset(data=val_files, transform=val_transforms)
-    val_loader = DataLoader(
-        val_ds, batch_size=1, shuffle=False, num_workers=4, pin_memory=False
-    )
-
 Check data shape and visualize:
 
 .. code-block:: python
@@ -409,6 +391,8 @@ Check data shape and visualize:
 
 
 Create Model, Loss, Optimizer:
+
+The minimum parameters for the UNETR model are :code:`in_channels`, :code:`out_channels`, and :code:`img_size`. Sometimes, defining only these three will avoid errors.
 
 .. code-block:: python
 
@@ -528,6 +512,6 @@ Execute a typical PyTorch training process
         global_step, dice_val_best, global_step_best = train(
             global_step, train_loader, dice_val_best, global_step_best
         )
-        
+
     model.load_state_dict(torch.load(os.path.join(root_dir, "UNETR_Abd_best_metric_model.pth")))
 

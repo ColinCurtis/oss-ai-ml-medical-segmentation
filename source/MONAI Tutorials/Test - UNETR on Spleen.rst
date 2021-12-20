@@ -388,45 +388,10 @@ UNETR
         val_ds, batch_size=1, shuffle=False, num_workers=4, pin_memory=True
     )
 
-Test
-----
-
-.. code-block:: python
-
-    num_workers=0
-    train_ds = CacheDataset(
-        data=train_files, transform=train_transforms,
-        cache_rate=1.0, num_workers=num_workers)
-
-    train_loader = DataLoader(train_ds, batch_size=2, shuffle=True, num_workers=num_workers)
-
-    val_ds = CacheDataset(
-        data=val_files, transform=val_transforms, cache_rate=1.0, num_workers=num_workers)
-    val_loader = DataLoader(val_ds, batch_size=1, num_workers=num_workers)
-
-
-
-    train_ds = CacheDataset(
-        data=train_files,
-        transform=train_transforms,
-        cache_num=24,
-        cache_rate=1.0,
-        num_workers=8,
-    )
-    train_loader = DataLoader(
-        train_ds, batch_size=1, shuffle=True, num_workers=8, pin_memory=True
-    )
-    val_ds = CacheDataset(
-        data=val_files, transform=val_transforms, cache_num=6, cache_rate=1.0, num_workers=4
-    )
-    val_loader = DataLoader(
-        val_ds, batch_size=1, shuffle=False, num_workers=4, pin_memory=True
-    )
-
-
-
 Create Model, Loss, Optimizer
 =============================
+
+The UNETR model in this step is causing "CUDA out of memory" errors.
 
 UNet
 ----
@@ -651,9 +616,12 @@ UNETR
     global_step_best = 0
     epoch_loss_values = []
     metric_values = []
+    total_start = time.time()
     while global_step < max_iterations:
         global_step, dice_val_best, global_step_best = train(
             global_step, train_loader, dice_val_best, global_step_best
         )
 
+    total_time = time.time() - total_start
     model.load_state_dict(torch.load(os.path.join(root_dir, "UNETR_Task09_spleen_best_metric_model.pth")))
+    print(f"Total time: {total_time}")
