@@ -528,5 +528,6 @@ Execute a typical PyTorch training process
         global_step, dice_val_best, global_step_best = train(
             global_step, train_loader, dice_val_best, global_step_best
         )
+        
     model.load_state_dict(torch.load(os.path.join(root_dir, "UNETR_Abd_best_metric_model.pth")))
 
