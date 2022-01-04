@@ -45,7 +45,6 @@ Install the software in order as presented in this guide so everything has acces
    :caption: MONAI
 
    MONAI/MONAI Label
-   MONAI/DICOM
 
 .. toctree::
    :maxdepth: 2
@@ -55,6 +54,7 @@ Install the software in order as presented in this guide so everything has acces
    MONAI Tutorials/Official Tutorials
    MONAI Tutorials/Transforms
    MONAI Tutorials/3D Segmentation - Spleen
+   MONAI Tutorials/3D Segmentation - Spleen - PyTorch Lightning
    MONAI Tutorials/3D Segmentation - BRATS Brain Tumors
    MONAI Tutorials/3D Segmentation - UNETR
    MONAI Tutorials/UNETR Test
